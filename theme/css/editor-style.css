@@ -1,0 +1,59 @@
+/*
+Theme Name: Kiviluks
+Description: Used to style the TinyMCE editor.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+.arve-embed{user-select: none!important; pointer-events: none!important}
+.acf-block-preview *{box-sizing: border-box}
+
+.editor-styles-wrapper.block-editor-writing-flow{
+    padding-bottom: 3.125rem!important;
+    color: var(--ama-body-color);
+    background-color: var(--ama-body-bg)
+}
+
+.block-editor-block-list__block-popover-inserter .block-editor-inserter__toggle.components-button.has-icon,
+.block-editor-block-list__empty-block-inserter .block-editor-inserter__toggle.components-button.has-icon,
+.block-editor-block-list__insertion-point-inserter .block-editor-inserter__toggle.components-button.has-icon,
+.block-editor-default-block-appender .block-editor-inserter__toggle.components-button.has-icon,
+.block-editor-block-list__block .block-list-appender .block-editor-inserter__toggle.components-button.has-icon,
+.block-editor-block-list__block .block-list-appender .block-list-appender__toggle{background-color: var(--ama-primary-color)}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *[data-type="core/buttons"],
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *[data-type="core/columns"]{max-width: calc(var(--ama-container) + var(--ama-gutter-double-x))}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *[data-type*="ama"] + *,
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * + *[data-type*="ama"]{margin-top: var(--ama-margin-top-block)}
+
+.splide{user-select: none; pointer-events: none}
+    .splide ul{margin: 0!important; list-style: none; padding: 0}
+    .splide__slide:not(:first-child),
+    .splide__arrows,
+    .splide__pagination{display: none}
+
+.acf-innerblocks-container{position: relative}
+.acf-innerblocks-container::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    border: 2px dashed rgba(255, 255, 255, .16);
+    user-select: none;
+    pointer-events: none
+}
+
+.block-stats__item > *:first-child{margin-top: 0!important; margin-bottom: 0!important}
+.block-stats__item > *:last-child{margin-bottom: 0!important}
+
+ul[data-type="core/list"]{padding-left: 0; list-style: none}
+    ul[data-type="core/list"] li{padding-left: 1.25rem; position: relative}
+    ul[data-type="core/list"] li + li,
+    ul[data-type="core/list"] li > ul{margin-top: var(--ama-margin-top-li)}
+        ul[data-type="core/list"] li::before{content: ''; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: var(--ama-marker-color); margin-left: -1.25rem; margin-right: .75rem}
+
+        .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *:not([data-type*="ama"]) + *[data-type="ama/cards"]{margin-top: var(--ama-margin-top-base)}

@@ -1,0 +1,30 @@
+{
+  "name": "ama/career",
+  "title": "Career List",
+  "description": "",
+  "icon": "align-pull-right",
+  "category": "ama",
+  "apiVersion": 2,
+  "keywords": [],
+  "styles": [],
+  "supports": {
+      "align": false,
+      "anchor": true,
+      "alignContent": false,
+      "color": {
+          "text": false,
+          "background": false,
+          "link": false
+      },
+      "alignText": true,
+      "fullHeight": false
+  },
+  "attributes": {
+  },
+  "style": "file:./style.css",
+  "script": "",
+  "acf": {
+      "mode": "edit",
+      "renderTemplate": "render.php"
+  }
+  }

@@ -1,0 +1,30 @@
+{
+"name": "ama/staff",
+"title": "Staff List",
+"description": "",
+"icon": "frame-person-sharp",
+"category": "ama",
+"apiVersion": 2,
+"keywords": [],
+"styles": [],
+"supports": {
+    "align": false,
+    "anchor": true,
+    "alignContent": false,
+    "color": {
+        "text": false,
+        "background": false,
+        "link": false
+    },
+    "alignText": true,
+    "fullHeight": false
+},
+"attributes": {
+},
+"style": "file:./style.css",
+"script": "",
+"acf": {
+    "mode": "edit",
+    "renderTemplate": "render.php"
+}
+}

@@ -1,0 +1,30 @@
+{
+    "name": "ama/posts",
+    "title": "Posts",
+    "description": "",
+    "icon": "embed-post",
+    "category": "ama",
+    "apiVersion": 2,
+    "keywords": [],
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false
+    },
+    "attributes": {
+    },
+    "style": "",
+    "script": "",
+    "acf": {
+        "mode": "edit",
+		"renderTemplate": "render.php"
+    }
+}

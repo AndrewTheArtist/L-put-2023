@@ -1,0 +1,51 @@
+
+.block-staff{
+  margin: 3rem 0 5rem 0;
+}
+
+.staff__container{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.staff_box-single{
+  flex-direction: column;
+  gap: var(--ama-flexbox-gap-sm);
+  align-self: start;
+}
+
+.staff-profile_picture{
+  width: 290px !important;
+  height: 380px !important;
+}
+
+.staff-profile_picture > img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.staff_box-single > p {
+  font-size: var(--ama-sm-font-size);
+  --ama-sm-font-size: 15px;
+}
+
+.contacts_singe-staff > a {
+  text-decoration: none;
+  font-weight: var(--ama-custom-font-weight);
+}
+
+
+@media(max-width:1024px){
+  .staff__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .staff_box-single{
+    text-align: -webkit-center;
+  }
+}
+  
+@media(max-width:425px){
+  .staff__container{grid-template-columns: repeat(1, 1fr);}
+}

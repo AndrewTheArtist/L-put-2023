@@ -1,0 +1,30 @@
+{
+    "name": "ama/stats",
+    "title": "Stats",
+    "description": "",
+    "icon": "chart-area",
+    "category": "ama",
+    "apiVersion": 2,
+    "keywords": [],
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": false,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false
+    },
+    "attributes": {
+    },
+    "style": "file:./style.css",
+    "script": "",
+    "acf": {
+        "mode": "edit",
+		"renderTemplate": "render.php"
+    }
+}

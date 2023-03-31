@@ -1,0 +1,44 @@
+{
+    "key": "group_637ccdce3cbe7",
+    "title": "Maps",
+    "fields": [
+        {
+            "key": "field_637ccdccec3bf",
+            "label": "Gutenberg Map",
+            "name": "acf_google_maps",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "*It's still Google Maps but Gutenberg is giving it's best to help us display it on site :)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": 800
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "ama\/map"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1669711716
+}

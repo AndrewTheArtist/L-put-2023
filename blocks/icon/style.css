@@ -1,0 +1,108 @@
+
+.block-icon{
+  padding-top:var(--ama-offset-bottom-last);
+  padding-bottom:var(--ama-offset-bottom-last);
+  margin-bottom: var(--ama-margin-bottom-columns);
+}
+
+.block-icon-slider-builder > li{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+/* Grid */
+
+.block-view__grid{
+  margin-top:var(--ama-margin-top-columns);
+  margin-bottom:var(--ama-margin-bottom-columns);
+  grid-template-columns: repeat(4, 1fr);
+  gap: calc(var(--ama-gutter-x) * 2);
+} 
+
+.block-view__grid >  li{
+  list-style: none;
+  display: inline-flex;
+  border: 1px solid #D6D6D6;
+  text-decoration: none;
+  text-align: -webkit-center;
+  justify-content: center;
+  place-items: end;
+  padding: 2rem;
+}
+
+.block-view__grid >  li > a{
+  display: flex;
+  align-self: center;
+}
+
+
+
+@media(max-width:1286px){
+  .splide__arrow {
+    display: none !important;
+}
+}
+
+@media(max-width:768px){
+  .block-view__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .a_icon_block--text{
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media(max-width:425px){
+  .block-view__grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Slide  */
+.a_grid-slide{
+  display:grid;
+  padding-top:var(--ama-offset-bottom-last);
+  padding-bottom:var(--ama-offset-bottom-last);
+  min-width: 200px;
+}
+
+.c_icon_block_slist > li{
+  object-fit: cover;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+
+.block-icon-slider-builder > li > *{
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/* Text */
+.a_icon_block--text{
+  margin-top:var(--ama-margin-top-columns);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.a_icon_block--text > a{
+  padding: 1rem 3rem 1rem 3rem;
+  color:var(--ama-primary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+.cstm_img_size img {
+  vertical-align: bottom;
+  width: 22.5rem;
+  height: 15rem;
+  object-fit: cover;
+}
